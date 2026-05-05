@@ -10,24 +10,33 @@ En este proyecto se implementan dos patrones de comportamiento:
 * **Template Method (Método Plantilla)**
 
 ## 2. ¿Qué problema resuelve cada ejemplo?
-* **Iterator:** [dfsfkfkdskfskdfññlfds].
-* **Template Method:** [dañfkslñfjkdfjslkdflsñfjd].
+* **Iterator:** [El patrón **Iterator** en este ejemplo resuelve el problema de recorrer y mostrar los proyectos disponibles en un sistema de prácticas profesionales, junto con su cupo actual  y sin depender de cómo están almacenados internamente, permitiendo iterar sobre la colección de proyectos de manera uniforme y controlada.]
+* **Template Method:** [definicion problema template ejemplo gabriel hola].
 
 ## 3. Herramientas y Lenguaje
-* **Lenguaje:** Java 17
-* **Gestor de dependencias:** Maven
+* **Lenguaje:** Python 3.14
+* **Gestor de dependencias:** Este proyecto no utiliza dependencias. Se necesita tener Python instalado
 * **IDE recomendado:** Visual Studio Code
 
-## 4. Instalación de dependencias
-Para compilar el proyecto y descargar dependencias, ejecuta en la terminal integrada:
-`mvn clean install`
+## 4. Requisitos e Instalación de dependencias
+Para instalar python debes ir a la página oficial (https://www.python.org/downloads/) y hacer click en Download Python 
+
 
 ## 5. Cómo ejecutar los ejemplos
 El código está separado en dos paquetes principales. Para ver la demostración de cada patrón:
 
 * **Para ejecutar Iterator:**
-Ejecuta la clase principal ubicada en `src/main/java/patrones/iterator/MainIterator.java`.
-*Salida esperada:* [sfjlfdflkjsdlfsld].
+*Desde la terminal en la carpeta principal del proyecto:*
+[cd src
+cd iterator
+python main.py]
+*Desde el explorador de archivos*
+Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\src\iterator\main.py"`.
+*Salida esperada:* [Proyectos disponibles para asignación:
+
+App Chedrahui (Cupo: 2)
+Proyecto Meta (Cupo: 0)
+Proyecto Banco (Cupo: 3)].
 
 * **Para ejecutar Template Method:**
 Ejecuta la clase principal ubicada en `src/main/java/patrones/template/MainTemplate.java`.

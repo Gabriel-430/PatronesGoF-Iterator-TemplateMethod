@@ -1,6 +1,3 @@
-# =========================
-# ENTIDAD: Proyecto
-# =========================
 class Proyecto:
     def __init__(self, nombre, cupo):
         self.nombre = nombre
