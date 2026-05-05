@@ -30,7 +30,7 @@ El código está separado en dos paquetes principales. Para ver la demostración
 ```bash
 cd Src
 cd iterator
-python main.
+python main.py
 ```
 
 *Desde el explorador de archivos*
