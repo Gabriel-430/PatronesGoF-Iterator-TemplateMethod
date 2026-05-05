@@ -2,7 +2,7 @@
 **Autores:** Emiliano Morales Baizabal y Gabriel Hernández Martínez
 
 # PatronesGoF-Iterator-TemplateMethod
-Implementación de los patrones de diseño Iterator y Template Method en Java.
+Implementación de los patrones de diseño Iterator y Template Method en Python.
 
 ## 1. Patrones Implementados
 En este proyecto se implementan dos patrones de comportamiento:
@@ -10,8 +10,8 @@ En este proyecto se implementan dos patrones de comportamiento:
 * **Template Method (Método Plantilla)**
 
 ## 2. ¿Qué problema resuelve cada ejemplo?
-* **Iterator:** [El patrón **Iterator** en este ejemplo resuelve el problema de recorrer y mostrar los proyectos disponibles en un sistema de prácticas profesionales, junto con su cupo actual  y sin depender de cómo están almacenados internamente, permitiendo iterar sobre la colección de proyectos de manera uniforme y controlada.]
-* **Template Method:** [definicion problema template ejemplo gabriel hola].
+* **Iterator:** El patrón **Iterator** en este ejemplo resuelve el problema de recorrer y mostrar los proyectos disponibles en un sistema de prácticas profesionales, junto con su cupo actual  y sin depender de cómo están almacenados internamente, permitiendo iterar sobre la colección de proyectos de manera uniforme y controlada.
+* **Template Method:** En este ejemplo se resuelve el problema de procesar diferentes tipos de documentos en un sistema, definiendo los pasos generales desde el inicio y sin repetir código para abrir o cerrar los archivos, permitiendo que cada formato de archivo extraiga su información sin alterar el flujo del programa.
 
 ## 3. Herramientas y Lenguaje
 * **Lenguaje:** Python 3.14
@@ -27,17 +27,38 @@ El código está separado en dos paquetes principales. Para ver la demostración
 
 * **Para ejecutar Iterator:**
 *Desde la terminal en la carpeta principal del proyecto:*
-[cd src
+```bash
+cd Src
 cd iterator
-python main.py]
+python main.
+```
+
 *Desde el explorador de archivos*
 Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\src\iterator\main.py"`.
-*Salida esperada:* [Proyectos disponibles para asignación:
-
+*Salida esperada:* 
+Proyectos disponibles para asignación:
 App Chedrahui (Cupo: 2)
 Proyecto Meta (Cupo: 0)
-Proyecto Banco (Cupo: 3)].
+Proyecto Banco (Cupo: 3).
 
 * **Para ejecutar Template Method:**
-Ejecuta la clase principal ubicada en `src/main/java/patrones/template/MainTemplate.java`.
-*Salida esperada:* [fjglksdjflksdjflsjdflksdf].
+*Desde la terminal en la carpeta principal del proyecto:*
+```bash
+cd Src
+cd template_method
+python main.py
+```
+*Desde el explorador de archivos*
+Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\Src\template_method\main.py"`.
+*Salida esperada:*
+Abriendo el archivo 'ventas_anuales.csv'...
+Extrayendo datos del archivo CSV...
+Analizando y estructurando la información obtenida...
+Cerrando 'ventas_anuales.csv' y liberando recursos.
+Resultado 1: Reporte final basado en: [Datos del CSV]
+
+Abriendo el archivo 'manual_usuario.pdf'...
+Extrayendo texto e imágenes del PDF...
+Analizando y estructurando la información obtenida...
+Cerrando 'manual_usuario.pdf' y liberando recursos.
+Resultado 2: Reporte final basado en: [Texto del PDF]
