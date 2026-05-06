@@ -1,7 +1,6 @@
 from __init__ import Proyecto, ListaProyectos, Coordinador
 
 def main():
-    # Crear colección de proyectos
     lista = ListaProyectos()
     lista.agregar_proyecto(Proyecto("App Chedrahui", 2))
     lista.agregar_proyecto(Proyecto("Proyecto Meta", 0))
@@ -13,4 +12,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()  
