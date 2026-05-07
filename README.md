@@ -36,10 +36,13 @@ python main.py
 *Desde el explorador de archivos*
 Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\src\iterator\main.py"`.
 *Salida esperada:* 
+```
 Proyectos disponibles para asignación:
 App Chedrahui (Cupo: 2)
 Proyecto Meta (Cupo: 0)
 Proyecto Banco (Cupo: 3).
+```
+
 
 * **Para ejecutar Template Method:**
 *Desde la terminal en la carpeta principal del proyecto:*
@@ -51,6 +54,7 @@ python main.py
 *Desde el explorador de archivos*
 Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\Src\template_method\main.py"`.
 *Salida esperada:*
+```
 Abriendo el archivo 'ventas_anuales.csv'...
 Extrayendo datos del archivo CSV...
 Analizando y estructurando la información obtenida...
@@ -62,3 +66,4 @@ Extrayendo texto e imágenes del PDF...
 Analizando y estructurando la información obtenida...
 Cerrando 'manual_usuario.pdf' y liberando recursos.
 Resultado 2: Reporte final basado en: [Texto del PDF]
+```
