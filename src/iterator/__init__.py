@@ -3,16 +3,16 @@ from abc import ABC, abstractmethod
 
 class Iterator(ABC):
     @abstractmethod
-    def has_next(self):
+    def hasMore(self):
         pass
 
     @abstractmethod
-    def next(self):
+    def getNext(self):
         pass
 
 class IterableCollection(ABC):
     @abstractmethod
-    def crear_iterador(self):
+    def createIterator(self):
         pass
 
 class Proyecto:
@@ -29,11 +29,11 @@ class ProyectoIterator(Iterator):
         self._proyectos = proyectos
         self._posicion = 0
 
-    def has_next(self):
+    def hasMore(self):
         return self._posicion < len(self._proyectos)
 
-    def next(self):
-        if self.has_next():
+    def getNext(self):
+        if self.hasMore():
             proyecto = self._proyectos[self._posicion]
             self._posicion += 1
             return proyecto
@@ -45,10 +45,10 @@ class ListaProyectos(IterableCollection):
     def __init__(self):
         self._proyectos = []
 
-    def agregar_proyecto(self, proyecto):
+    def agregarProyecto(self, proyecto):
         self._proyectos.append(proyecto)
 
-    def crear_iterador(self):
+    def createIterator(self):
         return ProyectoIterator(self._proyectos)
 
 
@@ -56,11 +56,11 @@ class Coordinador:
     def __init__(self, nombre):
         self.nombre = nombre
 
-    def mostrar_proyectos(self, lista_proyectos):
+    def mostrarProyectos(self, listaProyectos):
         print(f"\nProyectos disponibles para asignación:\n")
 
-        iterador = lista_proyectos.crear_iterador()
+        iterador = listaProyectos.createIterator()
 
-        while iterador.has_next():
-            proyecto = iterador.next()
+        while iterador.hasMore():
+            proyecto = iterador.getNext()
             print(proyecto)
