@@ -1,3 +1,5 @@
+from __init__ import ProcesadorCSV, ProcesadorPDF
+
 # Client
 def main():
     procesador_reportes = ProcesadorCSV()
