@@ -23,12 +23,17 @@ Para instalar python debes ir a la página oficial (https://www.python.org/downl
 
 
 ## 5. Cómo ejecutar los ejemplos
+Para poder ejecutar los ejemplos, antes es necesario clonar el repositorio usando el siguiente comando:
+```bash
+git clone https://github.com/Gabriel-430/PatronesGoF-Iterator-TemplateMethod.git
+cd PatronesGoF-Iterator-TemplateMethod
+```
 El código está separado en dos paquetes principales. Para ver la demostración de cada patrón:
 
 * **Para ejecutar Iterator:**
 *Desde la terminal en la carpeta principal del proyecto:*
 ```bash
-cd Src
+cd src
 cd iterator
 python main.py
 ```
@@ -47,12 +52,12 @@ Proyecto Banco (Cupo: 3).
 * **Para ejecutar Template Method:**
 *Desde la terminal en la carpeta principal del proyecto:*
 ```bash
-cd Src
+cd src
 cd template_method
 python main.py
 ```
 *Desde el explorador de archivos*
-Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\Src\template_method\main.py"`.
+Ejecuta la clase principal ubicada en `"PatronesGoF-Iterator-TemplateMethod\src\template_method\main.py"`.
 *Salida esperada:*
 ```
 Abriendo el archivo 'ventas_anuales.csv'...
