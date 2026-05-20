@@ -1,4 +1,4 @@
-  from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
 
 class Iterator(ABC):
@@ -23,7 +23,7 @@ class Proyecto:
     def __str__(self):
         return f"{self.nombre} (Cupo: {self.cupo})"
 
-//ConcreteIterator
+# ConcreteIterator
 class ProyectoIterator(Iterator):
     def __init__(self, proyectos):
         self._proyectos = proyectos
@@ -40,7 +40,7 @@ class ProyectoIterator(Iterator):
         else:
             raise StopIteration("No hay más proyectos")
 
-//ConcreteCollection
+# ConcreteCollection
 class ListaProyectos(IterableCollection):
     def __init__(self):
         self._proyectos = []
